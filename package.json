@@ -1,0 +1,38 @@
+{
+  "name": "@opatiny/geometry",
+  "version": "0.0.1",
+  "description": "Various geometry functions that deal with lines, points, angles, circles",
+  "main": "./src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "npm run test-only && npm run eslint",
+    "test-coverage": "npm run test-only -- --coverage",
+    "test-only": "jest",
+    "test-travis": "npm run eslint && npm run test-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opatiny/geometry.git"
+  },
+  "keywords": [],
+  "author": "Océane Patiny <oceane@patiny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opatiny/geometry/issues"
+  },
+  "homepage": "https://github.com/opatiny/geometry#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-cheminfo": "^1.17.2",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "jest": "^23.4.0"
+  }
+}
